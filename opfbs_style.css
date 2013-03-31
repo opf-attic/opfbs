@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed);
+
+@font-face {
+    font-family: 'New Regular';
+    src: url('fonts/hit-the-road-webfont.eot');
+    src: url('fonts/hit-the-road-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hit-the-road-webfont.woff') format('woff'),
+         url('fonts/hit-the-road-webfont.ttf') format('truetype'),
+         url('fonts/hit-the-road-webfont.svg#NewRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Ubuntu Condensed', sans-serif;
+color: #000;
+}
+h1 {
+font-size: 1.9em;
+}
+h2 {
+font-size: 1.7em;
+}
+h3 {
+font-size: 1.5em;
+}
+h4 {
+font-size: 1.3em;
+}
+h5 {
+font-size: 1.2em;
+}
+h6 {
+font-size: 1.1em;
+}
+
+.user-picture {
+float: right;
+border: 1px solid rgb(223, 223, 223);
+padding: 2px;
+margin: 4px;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;    
+}
+.navbar .dropdown-menu {
+ margin-top: -1px;
+}
+
+.hero-unit {
+padding: 20px
+}
+
+.region-sidebar-second .block {
+  background: #f5f5f5;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+.region-sidebar-second .block h1 {
+  text-align: center;
+  margin-top: 0;
+}
+.region-sidebar-second .block h2 {
+  text-align: center;
+  margin-top: 0;
+}
