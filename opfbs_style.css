@@ -12,15 +12,16 @@
 }
 
 body {
+  background: linear-gradient(to bottom, #fefefe 0%, #efefef 100%);
+  font-family: 'Nimbus Sans', 'Nimbus Sans L', FreeSans, 'Liberation Sans', 'Dejavu Sans Condensed', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans-serif;  
+}
+body .container {
   background-image: url('./images/circles-w800.png');
   background-repeat: no-repeat;
-  background-color: #fafafa;
-  background-position: 150px 200px;
+  background-position: 50px 100px;
   /*
   background-attachment: fixed;
   */
-  /*background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);*/
-  font-family: 'Nimbus Sans', 'Nimbus Sans L', FreeSans, 'Liberation Sans', 'Dejavu Sans Condensed', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,6 +65,7 @@ font-size: 1.1em;
   border-radius: 5px;
   border: 1px solid #AFD9E9;
   padding: 1em;
+  margin-bottom: 1em;
 }
 .breadcrumb { 
   border: 1px solid #AFD9E9;
@@ -140,10 +142,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
 }
 .collablock {
   margin: 1em auto 0 auto;
-  width: 300px;
+  width: 250px;
 }
 .collabicon {
-  width: 150px;
+  width: 125px;
   float: left;
   text-align: center;
   margin-bottom: 1em;
