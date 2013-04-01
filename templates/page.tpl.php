@@ -35,6 +35,9 @@
           </nav>
         </div>
       <?php endif; ?>
+      <form class="navbar-search pull-right" action="/search/node" method="post">
+        <input type="text" class="search-query" placeholder="Search" name="keys">
+      </form>
     </div>
   </div>
 </header>
@@ -42,11 +45,16 @@
 <div class="container">
 
   <header role="banner" id="page-header">
+   <div class="row">
+   <div class="span6">
     <?php if ( $site_slogan ): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
     <?php endif; ?>
-
+   </div>
+   <div class="span6">
     <?php print render($page['header']); ?>
+   </div>
+   </div>
   </header> <!-- /#header -->
 
   <div class="row">
@@ -57,7 +65,8 @@
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>  
 
-    <section class="<?php print _opfbs_content_span($columns); ?>">  
+    <section class="<?php print _opfbs_content_span($columns); ?>">
+     <div id="main-wrapper">
       <?php if ($page['highlighted']): ?>
         <div class="highlighted hero-unit"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
@@ -79,6 +88,7 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
+     </div>
     </section>
 
     <?php if ($page['sidebar_second']): ?>
