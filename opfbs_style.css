@@ -50,11 +50,7 @@ font-size: 1.1em;
 #page-header .block {
   float: right;
 }
-#page-header .block li {
-  float: left;
-  margin-right: 1em;
-  height: 30px;
-}
+
 .lead {
   background: url('images/circles-h30.png') no-repeat;
   padding-left: 50px;
@@ -66,6 +62,11 @@ font-size: 1.1em;
   border: 1px solid #AFD9E9;
   padding: 1em;
   margin-bottom: 1em;
+  overflow-x: auto;
+}
+code, pre {
+  display: block;
+  overflow-x: scroll;
 }
 .breadcrumb { 
   border: 1px solid #AFD9E9;

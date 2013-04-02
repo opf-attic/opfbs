@@ -24,5 +24,9 @@ function _opfbs_content_span($columns = 1) {
   return $class;
 }
 
+function opfbs_menu_tree__user_menu($variables){
+  return '<ul class="nav nav-pills">' . $variables['tree'] . '</ul>';
+}
+
 
 ?>

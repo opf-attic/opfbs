@@ -26,6 +26,9 @@ function opfbs_menu_link(array $variables) {
     // Set dropdown trigger element to # to prevent inadvertant page loading with submenu click
     $element['#localized_options']['attributes']['data-target'] = '#';
   }
+
+  if( $element['#original_link']['in_active_trail'] ) 
+    $element['#attributes']['class'][] = "active";
   
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
