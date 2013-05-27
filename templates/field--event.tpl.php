@@ -45,7 +45,9 @@
  */
 ?>
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<!--
  <pre>EVENT:<?php print $element['#field_name'] ?></pre>
+-->
   <?php if (!$label_hidden): ?>
     <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
   <?php endif; ?>

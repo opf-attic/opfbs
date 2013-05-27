@@ -25,7 +25,7 @@ body .container {
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: 'Ubuntu Condensed', sans-serif;
+/*font-family: 'Ubuntu Condensed', sans-serif;*/
 color: #000;
 }
 h1 {
@@ -58,7 +58,7 @@ font-size: 1.1em;
 
 #main-wrapper {
   background-color:rgba(255,255,255,0.9);
-  border-radius: 5px;
+  border-radius: 0px;
   border: 1px solid #AFD9E9;
   padding: 1em;
   margin-bottom: 1em;
@@ -78,7 +78,7 @@ code, pre {
   margin: 0;
 }
 .node {
-  border-radius: 5px;
+  border-radius: 0px;
   margin-bottom: 1em;
 }
 .node-wrapper {
@@ -121,7 +121,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 1em;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 .region-sidebar-second .block h1 {
   text-align: center;
@@ -152,6 +152,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu{
   margin-bottom: 1em;
 }
 
+.collabmore {
+  border: 1px solid #AFD9E9;
+  padding: 0.25em;
+}
+
+
 a, a:link, a:visited {
   color: #2262a4;
   outline: none;
@@ -167,6 +173,17 @@ a:hover, a:active {
   outline: none;
 }
 
+h2 a, h2 a:link, h2 a:visited {
+  color: black;
+}
+h2 a:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+.field-name-field-logo {
+  float: right;
+}
 .comment {
   background-color: rgba(255,255,255,0.9);
   border: 1px solid #AFD9E9;

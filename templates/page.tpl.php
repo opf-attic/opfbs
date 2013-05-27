@@ -66,10 +66,10 @@
     <?php endif; ?>  
 
     <section class="<?php print _opfbs_content_span($columns); ?>">
-     <div id="main-wrapper">
       <?php if ($page['highlighted']): ?>
         <div class="highlighted hero-unit"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
+     <div id="main-wrapper">
       <?php if ($breadcrumb): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>

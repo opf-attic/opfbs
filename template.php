@@ -28,5 +28,12 @@ function opfbs_menu_tree__user_menu($variables){
   return '<ul class="nav nav-pills">' . $variables['tree'] . '</ul>';
 }
 
+function opfbs_username_alter(&$name, $account) {
+  /* load the full user object, since $account not always provide all informations */  
+  $user = user_load($account->uid);
+  if (!empty($user->profile_forename) && !empty($user->profile_surname)) {
+    $name = $user->profile_forename . " " . $user->profile_surname;
+  }
+}
 
 ?>
