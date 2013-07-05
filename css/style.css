@@ -92,6 +92,9 @@ code, pre {
   padding-left: 5px;
   padding-right: 5px;
 }
+.node footer {
+  clear: both;
+}
 .user-picture {
   float: right;
   border: 1px solid rgb(223, 223, 223);
