@@ -36,8 +36,10 @@
         </div>
       <?php endif; ?>
       <form class="navbar-search pull-right" action="/search/node" method="post">
-        <input type="text" class="search-query" placeholder="Search" name="keys">
-      </form>
+        <div class="input-append">
+<input type="text" class="search-query" placeholder="Search" name="keys"><span class="add-on"><i class="icon-search"></i></span>
+      </div>
+    </form>
     </div>
   </div>
 </header>
